@@ -70,16 +70,16 @@ const gifts = [
   "Tumbler",
   "Cushion",
   "Mirror",
-  "Portable Power Bank",
-  "Gaming Accessories",
-  "Sports Jersey",
-  "Instant Camera",
-  "Leather Wallet",
-  "Travel Backpack",
+  // "Portable Power Bank",
+  // "Gaming Accessories",
+  // "Sports Jersey",
+  // "Instant Camera",
+  // "Leather Wallet",
+  // "Travel Backpack",
 ];
 console.log(gifts);
 pickNumberBtn.addEventListener("click", function () {
-  for (let i = 1; i < 64; i++) {
+  for (let i = 1; i < 60; i++) {
     document.getElementById(i).classList.remove("winningBox");
   }
   resultBtn.textContent = "Please Wait.....";
@@ -98,8 +98,8 @@ pickNumberBtn.addEventListener("click", function () {
     randomSound.currentTime = 0;
     randomSound.play();
     secondsCount = secondsCount + 1;
-    const randomBox = Math.floor(Math.random() * 64) + 1;
-    for (let i = 1; i < 64; i++) {
+    const randomBox = Math.floor(Math.random() * 60) + 1;
+    for (let i = 1; i < 60; i++) {
       if (i === randomBox) {
         document.getElementById(i).classList.add("highlightedBox");
       } else {
@@ -108,7 +108,7 @@ pickNumberBtn.addEventListener("click", function () {
     }
     if (secondsCount === 5) {
       resultBtn.textContent = "please wait...";
-      let randomNum = Math.random() * 64;
+      let randomNum = Math.random() * 60;
       let drawNum = Math.floor(randomNum) + 1;
       let gift = gifts[drawNum - 1];
       resultBtn.textContent = `You have got ${drawNum}, You got ${gift}.`;
