@@ -107,7 +107,6 @@ pickNumberBtn.addEventListener("click", function () {
       }
     }
     if (secondsCount === 5) {
-      resultBtn.textContent = "please wait...";
       let randomNum = Math.random() * 60;
       let drawNum = Math.floor(randomNum) + 1;
       let gift = gifts[drawNum - 1];
