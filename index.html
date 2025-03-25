@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link href="style.css" rel="stylesheet" type="text" />
+    <title>Lottery Game</title>
+  </head>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: crimson;
+    }
+    h1 {
+      text-align: center;
+      margin: 20px 0px;
+      color: rgb(12, 215, 237);
+    }
+    .lottery-container {
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      flex-direction: column;
+    }
+    .box {
+      width: 170px;
+      height: 40px;
+      background-color: rgb(234, 237, 12);
+      color: black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 5px;
+      font-weight: bolder;
+      font-size: larger;
+    }
+    .lottery-sheet-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    button {
+      /* height: 30px;
+      width: 100px; */
+      border: none;
+      background-color: blue;
+      color: white;
+      border-radius: 5px;
+      margin-right: 100px;
+      padding: 10px 20px;
+      margin-left: 550px;
+    }
+    .winningBox {
+      background-color: green;
+      color: white;
+    }
+    .highlightedBox {
+      border: 5px solid rgb(16, 4, 246);
+    }
+    h2 {
+      color: rgb(235, 242, 243);
+    }
+  </style>
+  <body>
+    <h1>Lottery Game</h1>
+    <div class="lottery-container">
+      <div class="lottery-sheet-container" id="lottery-sheet-container">
+        <!-- <div class="box winningBox">1.Cash</div> -->
+      </div>
+      <h2 id="result">Your result:</h2>
+    </div>
+    <button id="picknumberbtn">Pic A Number</button>
+
+    <script src="JavaScrpt.js"></script>
+  </body>
+</html>
