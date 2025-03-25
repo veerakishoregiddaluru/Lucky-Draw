@@ -41,6 +41,7 @@ button {
   margin-right: 100px;
   padding: 10px 20px;
   margin-left: 550px;
+  cursor: pointer;
 }
 .winningBox {
   background-color: green;
