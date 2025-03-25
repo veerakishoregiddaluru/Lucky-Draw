@@ -70,6 +70,12 @@ const gifts = [
   "Tumbler",
   "Cushion",
   "Mirror",
+  "Portable Power Bank",
+  "Gaming Accessories",
+  "Sports Jersey",
+  "Instant Camera",
+  "Leather Wallet",
+  "Travel Backpack",
 ];
 console.log(gifts);
 pickNumberBtn.addEventListener("click", function () {
