@@ -13,6 +13,8 @@ h1 {
   justify-content: center;
   text-align: center;
   flex-direction: column;
+  /* margin: auto;
+  max-width: 800px; */
 }
 .box {
   width: 170px;
@@ -32,16 +34,21 @@ h1 {
   justify-content: center;
 }
 button {
-  /* height: 30px;
-    width: 100px; */
+  height: 30px;
+  width: 150px;
   border: none;
   background-color: blue;
   color: white;
-  border-radius: 5px;
-  margin-right: 100px;
-  padding: 10px 20px;
-  margin-left: 550px;
+  border-radius: 10px;
+  /* margin-right: 100px; */
+  padding: 5px 5px;
+  /* margin-left: 500px; */
+  display: flex;
+  justify-content: center;
+  /* text-align: center; */
   cursor: pointer;
+  margin: auto;
+  max-width: 800px;
 }
 .winningBox {
   background-color: green;
